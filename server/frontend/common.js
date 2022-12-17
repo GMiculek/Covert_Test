@@ -8,6 +8,7 @@ function query() {
     .then((resp) => resp.text())
     .then((data) => {
         document.getElementById("response").innerHTML = data;
+		document.getElementById("response2").innerHTML = data;
     })
     .catch((err) => {
         console.log(err);
@@ -16,7 +17,9 @@ function query() {
 
 function login(){
 	
-	
+
+		
+		
 	
 	
 }
