@@ -11,7 +11,7 @@ CREATE TABLE users (
 
 INSERT INTO users
 VALUES(
-    "user" "Garrtt",
-    "pass" "REEE",
-    "user@example.com" "GGGG"
+    "user", "reeeeeee",
+    "pass", "REEE",
+    "user@example.com", "GGGG"
 );
