@@ -24,14 +24,14 @@ let connection = mysql.createConnection({
 app.use("/", express.static("frontend"));
 
 
-app.get("/query", function (request, response) {
+app.get("/query", function (request, Username) {
   connection.query(SQL, [true], (error, results, fields) => {
     if (error) {
       console.error(error.message);
-      response.status(500).send("database error");
+      Username.status(500).send("database error");
     } else {
       console.log(results);
-      
+      Username.send(results);
 	  
     }
   });
