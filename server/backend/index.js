@@ -32,6 +32,7 @@ app.get("/query", function (request, response) {
     } else {
       console.log(results);
       response.send(results);
+	  response2.send(results);
     }
   });
 })
