@@ -32,24 +32,13 @@ app.get("/query", function (request, response) {
     } else {
       console.log(results);
       
-	  response2.send(results);
+	  
     }
   });
 })
 
 
-app.get("/query", function (request, response2) {
-  connection.query(SQL, [true], (error, results, fields) => {
-    if (error) {
-      console.error(error.message);
-      response.status(500).send("database error");
-    } else {
-      console.log(results);
-      
-	  response2.send(results);
-    }
-  });
-})
+
 
 
 app.listen(PORT, HOST);
