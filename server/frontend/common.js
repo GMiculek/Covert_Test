@@ -13,3 +13,10 @@ function query() {
         console.log(err);
     })
 }
+
+function login(){
+	
+	
+	
+	
+}
