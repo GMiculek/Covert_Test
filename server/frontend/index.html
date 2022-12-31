@@ -12,10 +12,33 @@
 
     <body>
         <div class="content">
-            <button class="button" onclick="query()">Login</button>
+		
+		<h1></h1>
+		
+		<div>
+		
+			<input type="text" id="given_username" name="given_username" placeholder="Username" center rows="20" cols="45"><br>
+	   
+			<input type="text" id="given_password" name="given_password" placeholder="Password" rows="20" cols="45"><br> 
+      
+			<button id ="button1" class="button" onclick="login()">Login</button>
+			
+			<textarea id="show_message" rows="5" cols="45"> </textarea>
+		
+				</div>
+						
+				<h1></h1>
+		
+			<div>
+		
+            <button id ="button2"  class="button"  onclick="query()"  style="display:none" >Query</button>
             <p></p>
-            <textarea id="response" rows="5" cols="45" placeholder="Username"></textarea>
-			<textarea id="response" rows="5" cols="45" placeholder="Password"></textarea>
+			
+            <textarea id="response" rows="20" cols="45" placeholder="Database Results" style="display:none"></textarea>
+			
+			</div>	
+
 		</div>
+	
     </body>
 </html>
