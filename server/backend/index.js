@@ -38,6 +38,18 @@ app.get("/query", function (request, Username) {
 })
 
 
+app.get("/query", function (request, Username) {
+  connection.query(SQL, [true], (error, results, fields) => {
+    if (error) {
+      console.error(error.message);
+      Username.status(500).send("database error");
+    } else {
+      console.log(results);
+      Username.send(results);
+	  
+    }
+  });
+})
 
 
 
